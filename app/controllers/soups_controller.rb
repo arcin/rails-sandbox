@@ -13,4 +13,24 @@ class SoupsController < ApplicationController
       format.json {render json: @soups}
     end
   end
+
+  def edit
+
+  end
+
+  def update
+
+  end
+
+  def destroy
+
+  end
+
+  def new
+
+  end
+
+  def create
+
+  end
 end
