@@ -1,5 +1,5 @@
 class SoupsController < ApplicationController
-  before_action :fetch_soup, only: [:show, :edit, :update, :destroy]
+  before_action :fetch_soup, only: [:show, :edit, :update, :destroy, :toggle_featured]
   def show
     respond_to do |format|
       format.html
@@ -34,7 +34,8 @@ class SoupsController < ApplicationController
   end
 
   def toggle_featured
-
+    @soup.toggle!(:featured)
+    redirect_to @soup
   end
   private
   def fetch_soup
