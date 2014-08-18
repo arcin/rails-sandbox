@@ -1,0 +1,6 @@
+<h1><%= @soup.name %></h1>
+<% if @soup.featured? %>
+  <p>This soup is featured because its awesome!</p>
+<% else %>
+  <p>This soup isn't featured because it sucks!</p>
+<% end %>
