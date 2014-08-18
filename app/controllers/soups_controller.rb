@@ -35,6 +35,7 @@ class SoupsController < ApplicationController
 
   def toggle_featured
     @soup.toggle!(:featured)
+    flash[:notice] = "Successfully changed features status"
     redirect_to @soup
   end
   private
