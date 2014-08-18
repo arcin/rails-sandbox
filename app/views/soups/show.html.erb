@@ -4,3 +4,5 @@
 <% else %>
   <p>This soup isn't featured because it sucks!</p>
 <% end %>
+
+<%= link_to "Toggle Featured", toggle_featured_path(@soup) %>

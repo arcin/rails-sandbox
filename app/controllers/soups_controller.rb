@@ -33,6 +33,9 @@ class SoupsController < ApplicationController
 
   end
 
+  def toggle_featured
+
+  end
   private
   def fetch_soup
     @soup = Soup.find(params[:id])
