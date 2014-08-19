@@ -1,1 +1,0 @@
-A sandbox for rails patterns and applications.
